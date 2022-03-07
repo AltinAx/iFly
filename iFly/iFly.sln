@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32002.261
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "iFly", "iFly\iFly.csproj", "{C16A837F-8751-4EB4-877E-C01C5DC33025}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iFly.DAL", "iFly.DAL\iFly.DAL.csproj", "{8E8CD5D5-545A-487D-B40A-AE650DC497BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "iFly.BLL", "iFly.BLL\iFly.BLL.csproj", "{B5A477B5-E99B-4734-AFA6-02E5C6BA7D5E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C16A837F-8751-4EB4-877E-C01C5DC33025}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C16A837F-8751-4EB4-877E-C01C5DC33025}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C16A837F-8751-4EB4-877E-C01C5DC33025}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C16A837F-8751-4EB4-877E-C01C5DC33025}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8E8CD5D5-545A-487D-B40A-AE650DC497BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E8CD5D5-545A-487D-B40A-AE650DC497BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E8CD5D5-545A-487D-B40A-AE650DC497BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E8CD5D5-545A-487D-B40A-AE650DC497BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B5A477B5-E99B-4734-AFA6-02E5C6BA7D5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5A477B5-E99B-4734-AFA6-02E5C6BA7D5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5A477B5-E99B-4734-AFA6-02E5C6BA7D5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5A477B5-E99B-4734-AFA6-02E5C6BA7D5E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {53C3B299-8881-4850-A5EF-AE801536CB7B}
+	EndGlobalSection
+EndGlobal

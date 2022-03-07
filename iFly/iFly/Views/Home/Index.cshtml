@@ -1,0 +1,52 @@
+﻿@model IEnumerable<iFly.DAL.Entities.Flight>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Flights</h1>
+
+@using (Html.BeginForm())
+{
+    <p>
+        From: @Html.TextBox("From")
+        To: @Html.TextBox("To")
+        <input type="submit" value="Search" />
+    </p>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.ActionLink("From", "Index", new { sortOrder = ViewBag.FromSortParm })
+            </th>
+            <th>
+                @Html.ActionLink("To", "Index", new { sortOrder = ViewBag.ToSortParm })
+            </th>
+            <th>
+                @Html.ActionLink("Date", "Index", new { sortOrder = ViewBag.DateSortParm })
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.From)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.To)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    <a asp-controller="Flight" asp-action="AddFlight" asp-route-id="@item.Id">Book</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
